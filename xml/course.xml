@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="course.xsl"?>
+<!DOCTYPE course SYSTEM "course.dtd">
+<courses>
+   <course id="C101"> 
+       <name>helloworld</name>
+       <reg>101</reg>
+   </course>
+     <course id="C102"> 
+       <name>helloworld</name>
+       <reg>102</reg>
+   </course>
+     <course id="C103"> 
+       <name>helloworld</name>
+       <reg>103</reg>
+   </course>
+</courses>

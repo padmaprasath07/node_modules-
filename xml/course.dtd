@@ -1,0 +1,7 @@
+<!ELEMENT courses (course+)>
+<!ELEMENT course (name,reg)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT reg (#PCDATA)>
+<!ATTLIST course
+id ID #REQUIRED
+>
