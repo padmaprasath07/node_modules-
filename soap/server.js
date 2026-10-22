@@ -7,6 +7,7 @@ const service = {
   BookService: {
     BookPort: {
       getBook() {
+        console.log("getBook called!");
         return { result: "Python Basics" };
       }
     }
@@ -14,8 +15,14 @@ const service = {
 };
 
 const server = http.createServer();
+
 server.listen(8000, () => {
-  soap.listen(server, "/book", service,
-    fs.readFileSync("book.wsdl", "utf8"));
-  console.log("Server running on port 8000");
+  soap.listen(
+    server,
+    "/book",
+    service,
+    fs.readFileSync("./books.wsdl", "utf8")
+  );
+
+  console.log("SOAP server running at http://localhost:8000/book");
 });

@@ -1,11 +1,7 @@
 <soap:Envelope
  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:tns="urn:BookService">
+ xmlns:tns="urn:Book">
  <soap:Body>
-  <tns:addBook>
-   <tns:id>3</tns:id>
-   <tns:title>Web Technology</tns:title>
-   <tns:author>Prasath</tns:author>
-  </tns:addBook>
+  <tns:getBook/>
  </soap:Body>
 </soap:Envelope>
